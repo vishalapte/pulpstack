@@ -1,0 +1,54 @@
+{% load static %}
+<nav id="nav" class="navbar navbar-expand-lg navbar-fixed-top navbar-light">
+  <div class="container-fluid p-0">
+
+  <a class="navbar-brand" href="/">
+    {% comment %}
+    <img id="navbar-brand-image"
+         src="{%  static 'logo/logo.svg' %}"
+         height="2.5rem" style="max-width: 60vw;"
+         alt="{{ meta.name }}">
+    {% endcomment %}
+    <b>Pulp</b>Stack
+  </a>
+
+  <button type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar">
+    <span><i class="fad fa-books"></i></span>
+{#    <span class="navbar-toggler-icon"></span>#}
+  </button>
+
+  <div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-default navbar-nav ml-auto">
+      <!-- Services -->
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link px-md-3" data-toggle="dropdown" role="button">
+          <span class="foo">Books</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-item">
+            <a href="#">By Author</a>
+          </div>
+          <div class="dropdown-item">
+            <a href="#">By Title</a>
+          </div>
+          <div class="dropdown-item">
+            <a href="#">By Date</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- About -->
+      <li class="nav-item">
+        <a href="#" class="nav-link px-md-3" data-toggle="dropdown" role="button">
+          <span class="foo">About Us</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>

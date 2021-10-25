@@ -1,0 +1,54 @@
+{% extends '_seo.html' %}
+{% load static i18n qux %}
+{% lineless %}
+
+{% block application_name %}Pulp Stack{% endblock %}
+{% block apple_mobile_web_app_title %}Pulp Stack{% endblock %}
+{% block icon %}{% static '/logo/logo.svg' %}{% endblock %}
+
+{% block keywords %}{{ meta.keywords }}{% endblock %}
+
+{% block title_prefix %}Pulp Stack{% endblock %}
+
+{% if meta.description %}
+{% block meta_description %}{{ meta.description }}{% endblock %}
+{% block og_description %}{{ meta.description }}{% endblock %}
+{% block twitter_description %}{{ meta.description }}{% endblock %}
+{% endif %}
+
+{% if meta.page_title %}
+{% block title %} {{ meta.page_title|default_if_none:"" }}{% endblock %}
+{% block og_title %} {{ meta.page_title|default_if_none:"" }}{% endblock %}
+{% endif %}
+
+{# Facebook Open Graph #}
+{% block og_url_prefix %}https://pulpstack.com/{% endblock %}
+{% block og_site_name %}Pulp Stack{% endblock %}
+{% block og_title_prefix %}Pulp Stack{% endblock %}
+{% block og_image %}https://pulpstack.com/static/logo/logo.png{% endblock %}
+
+{# Twitter Card #}
+{% block twitter_site %}@pulpstack{% endblock %}
+{% block twitter_site_id %}@pulpstack{% endblock %}
+{% block twitter_title_prefix %}Pulp Stack{% endblock %}
+{% block twitter_creator %}@pulpstack{% endblock %}"/>
+{% block twitter_creator_id %}@pulpstack{% endblock %}"/>
+{% block twitter_image %}https://pulpstack.com/static/logo/logo.png{% endblock %}
+
+{% block canonical_prefix %}https://pulpstack.com{% endblock %}
+{% block canonical %}{{ meta.canonical }}{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="{% static 'css/all.css' %}">
+<!-- Overloaded bootstrap -->
+<link rel="stylesheet" href="{% static 'css/qux-bootstrap.css' %}">
+{% endblock %}
+
+{% block navbar %}
+{% include '_navbar.html' %}
+{% endblock %}
+
+{% endlineless %}
