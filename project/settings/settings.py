@@ -159,17 +159,19 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = [
-    ('css', os.path.join(BASE_DIR, "common/css")),
-    ('css', os.path.join(BASE_DIR, "common/css/bootstrap")),
-    ('css', os.path.join(BASE_DIR, "common/css/fontawesome")),
-    ('js', os.path.join(BASE_DIR, "common/js")),
-    ('js', os.path.join(BASE_DIR, "common/js/bootstrap")),
-    ('js', os.path.join(BASE_DIR, "common/js/fontawesome")),
-    ('fonts', os.path.join(BASE_DIR, "common/fonts")),
-    ('webfonts', os.path.join(BASE_DIR, "common/webfonts")),
     ('logo', os.path.join(BASE_DIR, "common/logo")),
-    ('favicons', os.path.join(BASE_DIR, "common/favicons")),
+    ('css', os.path.join(BASE_DIR, "common/css")),
+    ('css', os.path.join(BASE_DIR, "common/bootstrap/css")),
+    ('css', os.path.join(BASE_DIR, "common/fontawesome/css")),
+    ('css', os.path.join(BASE_DIR, "common/qux/css")),
+    ('js', os.path.join(BASE_DIR, "common/js")),
+    ('js', os.path.join(BASE_DIR, "common/bootstrap/js")),
+    ('js', os.path.join(BASE_DIR, "common/fontawesome/js")),
+    ('js', os.path.join(BASE_DIR, "common/qux/js")),
+    ('fonts', os.path.join(BASE_DIR, "common/fonts")),
+    ('webfonts', os.path.join(BASE_DIR, "common/fontawesome/webfonts")),
 ]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
