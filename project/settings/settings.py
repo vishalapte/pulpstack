@@ -164,7 +164,7 @@ STATICFILES_DIRS = [
     ('css', os.path.join(BASE_DIR, "common/css/fontawesome")),
     ('js', os.path.join(BASE_DIR, "common/js")),
     ('js', os.path.join(BASE_DIR, "common/js/bootstrap")),
-    ('js', os.path.join(BASE_DIR, "common/js/fa")),
+    ('js', os.path.join(BASE_DIR, "common/js/fontawesome")),
     ('fonts', os.path.join(BASE_DIR, "common/fonts")),
     ('webfonts', os.path.join(BASE_DIR, "common/webfonts")),
     ('logo', os.path.join(BASE_DIR, "common/logo")),

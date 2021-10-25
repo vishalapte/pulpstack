@@ -9,8 +9,9 @@ qux
 qux/
 dump.rdb
 
-# common
-common/
+common
+common/*/fontawesome
+common/*/bootstrap
 
 # dotenv
 .env
