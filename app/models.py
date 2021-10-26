@@ -50,7 +50,7 @@ class Book(CoreModel):
     slug = models.SlugField(max_length=32, unique=True)
     title = models.CharField(max_length=64)
     series = models.CharField(max_length=64, **default_null_blank)
-    sequence = models.IntegerField()
+    sequence = models.IntegerField(**default_null_blank)
     author = models.ForeignKey(Author, on_delete=models.DO_NOTHING, **default_null_blank)
     publisher = models.ForeignKey(Publisher, on_delete=models.DO_NOTHING, **default_null_blank)
     pubdate = models.DateField(**default_null_blank)

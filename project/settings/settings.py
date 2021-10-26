@@ -20,7 +20,6 @@ import dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 dotenv_file = os.path.join(BASE_DIR, 'project', '.env')
-print(dotenv_file)
 if not os.path.exists(dotenv_file):
     print(f"Cannot run project without {dotenv_file}")
     exit()
